@@ -1,10 +1,7 @@
-import express from "express";
-import dotenv from "dotenv";
 import http from "http";
+import app from "./app/app.js";
 import mongoDBConnection from "./database/config.js";
-dotenv.config();
 
-const app = express();
 const server = http.createServer(app);
 const PORT = process.env.PORT || 5050;
 
